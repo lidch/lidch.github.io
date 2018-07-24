@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- 谨以此网站献给我亲爱的儿子李大锤，记录成长过程，记录美好回忆。你的来到，是上天给爸爸妈妈最好的礼物。愿大锤健康快乐。 —— 李迟 -->
+<html>
+  <head>
+      
+  {% include head.html %}
+
+  {% if page.url == "/404.html" %}
+  <meta http-equiv="refresh" content="10; url={{ site.baseurl }}">
+  {% endif %}
+
+  </head>
+
+<header class="post-header">
+	
+    <center>
+    <div class="contact-title">
+    <span><a class="link" href="{{ site.baseurl }}/">{{ site.title }}</a>
+    </span>
+    
+    </div>
+    <div class="contact-subtitle"><p>{{ site.subtitle }}</p></div>
+    </center>
+    </div>
+</header>
+
+{% include nagv.html %}
+
+<body>
+
+  {% include header.html %}
+
+
+
+
+  <div class="wrapper">
+        <div class="post-content">
+            {{ content }}
+        </div>
+  </div>
+
+</body>
+
+<foot>
+
+    {% include footer.html %}
+    {% include foot.html %}
+
+</foot>
+
+</html>

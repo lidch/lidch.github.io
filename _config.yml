@@ -1,0 +1,13 @@
+# 网站设置
+title: 李大锤的个人主页
+subtitle: 一只青蛙一张嘴，一个大锤两条腿
+name: 李大锤 # 姓名
+email: li@lidachui.cn # 邮箱
+description: "李大锤的个人主页"
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://www.lidachui.cn/" # the base hostname & protocol for your site
+skillstree: true # 是否显示技能树
+
+# Build settings
+permalink: none
+markdown: kramdown

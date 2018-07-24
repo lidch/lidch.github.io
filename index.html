@@ -1,0 +1,42 @@
+---
+layout: default
+---
+
+<script type="text/javascript" src="/js/hellwl.js"></script>
+<h2>我是谁</h2>
+我是李大锤，
+<script type="text/javascript" >
+    ret = getNowAge();
+    document.write(ret);
+</script>
+<br>
+<br>
+我和爸爸、妈妈在南宁，我希望我们一家人开开心心生活。
+
+<br>
+<br>
+<br>
+
+<style>
+img{
+float:left;
+
+}
+</style>
+<img src="/img/2017/2017_05_玩眼镜.jpg" width="50%"/>
+<img src="/img/2017/2017_08_16_在床上玩.jpg" width="50%"/>
+<img src="/img/2018/2018_0220_玩甘蔗.jpg" width="50%"/>
+<img src="/img/2018/2018_0404_看书.jpg" width="50%"/>
+</br></br>
+
+<!--
+
+<h2>联系我</h2>
+
+
+我还小，不会上网，有事请找我爸爸。<br>
+-->
+
+{% if site.skillstree %}
+{% include skillstree.html %}
+{% endif %}
