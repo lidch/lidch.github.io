@@ -1,1 +1,1 @@
-bundle exec jekyll serve -H 192.168.31.212
+bundle exec jekyll serve -H 172.18.18.4
