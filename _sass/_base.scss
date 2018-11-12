@@ -212,17 +212,15 @@ td  {
 
 table, th {
     width: 100%;
-    table-layout: fixed;
+    #table-layout: fixed;
     #margin: 24px;
     margin-left:-1px;  
-    #text-align: center;
-    text-align:left;
+    #text-align:center;
     border-bottom: 1px solid #eee;
     border-collapse: collapse;
-line-height: 25px;
-letter-spacing: 1px;
+    line-height: 25px;
+    letter-spacing: 1px;
 }
-
 
 /**
  * Wrapper
