@@ -1,8 +1,8 @@
 function Base64() {
- 
+
     // private property
     _keyStr = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";
- 
+
     // public method for encoding
     this.encode = function (input) {
         var output = "";
@@ -28,7 +28,7 @@ function Base64() {
         }
         return output;
     }
- 
+
     // public method for decoding
     this.decode = function (input) {
         var output = "";
@@ -55,7 +55,7 @@ function Base64() {
         output = _utf8_decode(output);
         return output;
     }
- 
+
     // private method for UTF-8 encoding
     _utf8_encode = function (string) {
         string = string.replace(/\r\n/g,"\n");
@@ -72,11 +72,11 @@ function Base64() {
                 utftext += String.fromCharCode(((c >> 6) & 63) | 128);
                 utftext += String.fromCharCode((c & 63) | 128);
             }
- 
+
         }
         return utftext;
     }
- 
+
     // private method for UTF-8 decoding
     _utf8_decode = function (utftext) {
         var string = "";
@@ -112,7 +112,7 @@ function getNowAge()
     var strbase = "RGVjIDEyLCAyMDE2";
     var aaa = new Base64();
     var ddd = aaa.decode(strbase);
-    
+
      // 须初始化为0
     year = 0;
     mon = 0;
@@ -137,7 +137,7 @@ function getNowAge()
         mon -= 1;
         day += 30; // TODO...
     }
-    
+
     mon = mon + mon2 - mon1;
     if (mon < 0)
     {
@@ -154,8 +154,8 @@ function getNowAge()
     {
         str = year + '岁' + mon + '月' + day + '天';
     }
-    
-    return str+'了。';
+
+    return str; //+'了。';
 }
 
 function getNeedAge(indate)
@@ -168,7 +168,7 @@ function getNeedAge(indate)
     var strbase = "RGVjIDEyLCAyMDE2";
     var aaa = new Base64();
     var ddd = aaa.decode(strbase);
-    
+
      // 须初始化为0
     year = 0;
     mon = 0;
@@ -194,7 +194,7 @@ function getNeedAge(indate)
         mon -= 1;
         day += 30; // TODO...
     }
-    
+
     mon = mon + mon2 - mon1;
     if (mon < 0)
     {
@@ -214,6 +214,6 @@ function getNeedAge(indate)
     {
         str = year + '岁' + mon + '月' + day + '天';
     }
-    
+
     return str;
 }

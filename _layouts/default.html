@@ -19,34 +19,13 @@
 
   </head>
 
-<header class="post-header">
-	
-    <center>
-    <div class="contact-title">
-    <span><a class="link" href="{{ site.baseurl }}/">{{ site.title }}</a>
-    </span>
-    
-    </div>
-    <div class="contact-subtitle"><p>{{ site.subtitle }}</p></div>
-    </center>
-    </div>
-</header>
-
-{% include nagv.html %}
-
 <body>
-
-  {% include header.html %}
-
-
-
-
+  {% include nav.html %}
   <div class="wrapper">
-        <div class="post-content">
-            {{ content }}
-        </div>
+    <div class="post-content">
+        {{ content }}
+    </div>
   </div>
-
 </body>
 
 <foot>

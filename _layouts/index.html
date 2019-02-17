@@ -1,0 +1,122 @@
+<!-- 
+
+谨以此网站献给我亲爱的儿子李大锤，记录成长过程，记录美好回忆。
+你的来到，是上天给爸爸妈妈最好的礼物。愿大锤健康快乐。 
+  —— 李迟 
+
+-->
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+      
+  {% include head.html %}
+
+  {% if page.url == "/404.html" %}
+  <meta http-equiv="refresh" content="10; url={{ site.baseurl }}">
+  {% endif %}
+
+  </head>
+
+<body>
+{{ content }}
+
+  {% include nav.html %}
+
+  <div class="container div_divider">
+      <div class="row">
+          <!-- 文章列表 -->
+          <div class="col-xs-9">
+              <div class="list-group div_article">
+                  <!-- 子头栏 -->
+                  <a href="#" class="list-group-item active item_article_first">
+                      <h4 class="list-group-item-heading">
+                          我是谁
+                      </h4>
+                  </a>
+                  <!-- 文章列表 -->
+                  <div class="list-group-item item_article">
+                      <div class="row">
+                          <div class="div_center col-xs-9">
+                              <div class="list-group-item-heading div_article_title">
+                                  <strong>
+                                  
+                                  </strong>
+                              </div>
+                              <p class="list-group-item-text div_article_content">
+                                  我是李大锤，
+<script type="text/javascript" >
+    ret = getNowAge();
+    document.write(ret);
+</script>了。
+<br>
+我和爸爸、婆婆在南宁西乡塘生活，爸爸在青秀区上班。妈妈在钦州上班，周末有空就会回南宁看我。
+                              </p>
+                          </div>
+                          <!-- 右侧图片，信息 -->
+                          <div class="col-xs-3 div_right_info">
+                              <img class="iv_article img-rounded" src="{{ site.baseurl }}/img/web/me2.jpg">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- 右侧 -->
+          <div class="col-xs-3 div_record">
+              <!-- 个人信息 -->
+              <div class="jumbotron div_userinfo">
+                  <img class="iv_user_head img-circle" src="{{ site.baseurl }}/img/web/me.jpg">
+                  <div style="display: inline-block; margin-left: 12px;font-size: 32px;">李大锤&nbsp;&nbsp;</div>
+                  &nbsp;<script type="text/javascript" >
+                    ret = getNowAge();
+                    document.write(ret);
+                  </script>
+              </div>
+              <!-- 记录展示模块 -->
+              <div style="display: flex;">
+                  <!-- <div style="flex: 1"><hr></div> -->
+                  <div style="text-align: center;line-height: 12px;color: #34374C">最新记录</div>
+                  <!-- <div style="flex: 1"><hr></div> -->
+              </div>
+              <br>
+              <textarea class="form-control" rows="3" name=textarea placeholder="一只青蛙一张嘴 两只眼睛四条腿" readonly></textarea>
+              <hr>
+              <!-- 小功能列表 -->
+              <div class="row div_little_func">
+                  <div class="col-xs-1">
+                      <button class="btn btn-default btn-cricle btn_login">一</button>
+                  </div>
+                  <div class="col-xs-1">
+                      <button class="btn btn-default btn-cricle btn_login">只</button>
+                  </div>
+                  <div class="col-xs-1">
+                      <button class="btn btn-default btn-cricle btn_login">青</button>
+                  </div>
+                <div class="col-xs-2">
+                      <button class="btn btn-default btn-cricle btn_login">蛙</button>
+                  </div>
+                  <div class="col-xs-1">
+                      <button class="btn btn-default btn-cricle btn_stay">一</button>
+                  </div>
+                  <div class="col-xs-1">
+                      <button class="btn btn-default btn-cricle btn_write">张</button>
+                  </div>
+                <div class="col-xs-1">
+                      <button class="btn btn-default btn-cricle btn_write">嘴</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    
+</body>
+
+<foot>
+
+    {% include footer.html %}
+    {% include foot.html %}
+
+</foot>
+
+</html>

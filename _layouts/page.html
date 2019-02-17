@@ -1,5 +1,5 @@
 ---
-layout: null
+layout: page
 ---
 
 <html>
@@ -12,23 +12,16 @@ layout: null
   {% endif %}
 
   </head>
-  
-  {% include header.html %}
 
-<header class="post-header">
-	<center>
-        <div class="contact-title"><a class="link" href="{{ site.baseurl }}/">{{ site.title }}</a></div>
-		<div class="contact-subtitle"><p>{{ site.subtitle }}</p></div>
-    </center>
-</header>
 
-{% include nagv.html %}
-
-<div class="wrapper">
-	<div class="post-content">
-		{{ content }}
-	</div>
-</div>
+<body>
+  {% include nav.html %}
+  <div class="wrapper">
+    <div class="post-content">
+        {{ content }}
+    </div>
+  </div>
+</body>
 
 <footer>
 
