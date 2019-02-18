@@ -1,16 +1,18 @@
   <!-- 顶层标题 -->
-  <nav class="navbar navbar-default navbar-fixed-top">                <!--声明导航区域，设置导航默认样式，设置导航条固定在顶部-->
-      <div class="container">                                            <!--设置固定布局，最大宽度1140-->
-          <div class="navbar-header">                                    <!--设置导航标题区域-->
-              <a href="{{ site.baseurl }}/" class="navbar-brand" style="padding:0;"><img src="{{ site.baseurl }}/img/web/me.jpg" alt="李大锤个人主页"></a><div style="display: inline-block; margin-left: 30px;font-size: 30px;">李大锤的个人主页</div>
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">    <!--设置导航按钮-->
-                  <span class="icon-bar"></span>        <!--设置导航按钮样式-->
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+          <div class="navbar-header">
+              <!-- 主页名称 -->
+              <a href="{{ site.baseurl }}/" class="navbar-brand" style="padding:0;"><img src="{{ site.baseurl }}/img/web/me.jpg" alt="李大锤个人主页"></a><div style="display: inline-block; margin-left: 10px;font-size: 30px;">李大锤的个人主页</div>
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                  <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
               </button>
           </div>
-          <div class="collapse navbar-collapse" id="navbar-collapse">                <!--设置导航折叠区域，设置导航折叠样式-->
-              <ul class="nav navbar-nav navbar-right" style="margin-top:0">        <!--设置列表区域，导航列表默认样式，导航列表右浮动-->
+          <!-- 导航 在右侧 -->
+          <div class="collapse navbar-collapse" id="navbar-collapse">
+              <ul class="nav navbar-nav navbar-right" style="margin-top:0">
                   <li class="active"><a class="link" href="{{ site.baseurl }}/"><span class="glyphicon glyphicon-home"></span> 首页</a></li>
                   <li><a class="link" href="{{ site.baseurl }}/story/category-pic/"><span class="glyphicon glyphicon glyphicon-camera"></span> 照片墙</a></li>
                   <li><a class="link" href="{{ site.baseurl }}/story/category-note/"><span class="glyphicon glyphicon-edit"></span> 记事本</a></li>
@@ -32,22 +34,16 @@
       <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
           <div class="item active">
-              <img src="{{ site.baseurl }}/img/index/1.jpg">
-              <div class="carousel-caption">
-                <h2>我在花卉公园</h2>
-              </div>
+            <div class="pc_imgBox hidden-xs" style="background-image: url('{{ site.baseurl }}/img/index/1.jpg')"></div>
+            <div class="m_imgBox hidden-lg hidden-md hidden-sm"><img src="{{ site.baseurl }}/img/index/1-1.jpg" alt=""></div>
           </div>
           <div class="item">
-              <img src="{{ site.baseurl }}/img/index/2.jpg">
-              <div class="carousel-caption">
-                <h2>我在图书馆</h2>
-              </div>
+              <div class="pc_imgBox hidden-xs" style="background-image: url('{{ site.baseurl }}/img/index/2.jpg')"></div>
+            <div class="m_imgBox hidden-lg hidden-md hidden-sm"><img src="{{ site.baseurl }}/img/index/2-1.jpg" alt=""></div>
           </div>
           <div class="item">
-            <img src="{{ site.baseurl }}/img/index/3.jpg">
-              <div class="carousel-caption">
-                <h2>我在民族广场</h2>
-              </div>
+            <div class="pc_imgBox hidden-xs" style="background-image: url('{{ site.baseurl }}/img/index/3.jpg')"></div>
+            <div class="m_imgBox hidden-lg hidden-md hidden-sm"><img src="{{ site.baseurl }}/img/index/3-1.jpg" alt=""></div>
           </div>
       </div>
 
@@ -109,4 +105,5 @@
 
 <div class="container div_divider">
 <hr class="hr_1">欢迎访问李大锤的个人主页 <a class="link" href="{{ site.baseurl }}/">返回首页</a> <hr class="hr_2"> 
+
 </div>

@@ -19,6 +19,20 @@
 	margin-bottom: 32px;
 }
 
+.pc_imgBox{
+    display: block;
+    height: 100%;
+    padding-top: 55%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.m_imgBox{
+    display: block;
+    width: 100%;
+    padding-top: 10%;
+}
+        
 /* 功能块 */
 .panel {
 	width: 100px;
