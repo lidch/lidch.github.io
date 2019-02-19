@@ -45,7 +45,13 @@
 .div_function {
 	width: 78%;
 	margin: auto;
-	margin-top: -52px;
+	margin-top: -50px;
+}
+
+.div_function1 {
+	width: 78%;
+	margin: auto;
+	margin-top: 80px;
 }
 
 .iv_function {
