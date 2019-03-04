@@ -20,12 +20,14 @@ layout: index
 <body>
   {% include topbar.html %}
   <!-- 图片轮播 -->
-  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval=3000 data-pause = "hover" data-wrap="true" style="width: 75%;height: 80%; margin-left:auto; margin-right:auto;">
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval=4000 data-pause = "hover" data-wrap="true" style="width: 75%;height: 80%; margin-left:auto; margin-right:auto;">
       <!-- Indicators 这里控制轮播的“圆圈”个数，与下面实际展示的数量要一致-->
       <ol class="carousel-indicators">
           <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
           <li data-target="#carousel-example-generic" data-slide-to="1"></li>
           <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="4"></li>
       </ol>
 
       <!-- Wrapper for slides -->
@@ -41,6 +43,14 @@ layout: index
           <div class="item">
             <div class="pc_imgBox hidden-xs" style="background-image: url('{{ site.baseurl }}/img/index/3.jpg')"></div>
             <div class="m_imgBox hidden-lg hidden-md hidden-sm"><img src="{{ site.baseurl }}/img/index/3-1.jpg" alt=""></div>
+          </div>
+          <div class="item">
+              <div class="pc_imgBox hidden-xs" style="background-image: url('{{ site.baseurl }}/img/index/4.jpg')"></div>
+            <div class="m_imgBox hidden-lg hidden-md hidden-sm"><img src="{{ site.baseurl }}/img/index/4-1.jpg" alt=""></div>
+          </div>
+          <div class="item">
+            <div class="pc_imgBox hidden-xs" style="background-image: url('{{ site.baseurl }}/img/index/5.jpg')"></div>
+            <div class="m_imgBox hidden-lg hidden-md hidden-sm"><img src="{{ site.baseurl }}/img/index/5-1.jpg" alt=""></div>
           </div>
       </div>
 
@@ -122,7 +132,7 @@ layout: index
                                   </strong>
                               </div>
                               <p class="list-group-item-text div_article_content">
-                                  我是李大锤，
+我是李大锤，
 <script type="text/javascript" >
     ret = getNowAge();
     document.write(ret);
@@ -153,12 +163,22 @@ layout: index
               <!-- 记录展示模块 -->
               <div style="display: flex;">
                   <!-- <div style="flex: 1"><hr></div> -->
-                  <div style="text-align: center;line-height: 12px;color: #34374C">最新记录</div>
+                  <div style="text-align: center;line-height: 12px;color: #34374C font-size: 12px;">最新记录</div>
                   <!-- <div style="flex: 1"><hr></div> -->
               </div>
               <br>
               <textarea class="form-control" rows="3" name=textarea placeholder="一只青蛙一张嘴 两只眼睛四条腿" readonly></textarea>
               <hr>
+              
+              <!-- 记录展示模块 -->
+              <div style="display: flex;">
+                  <!-- <div style="flex: 1"><hr></div> -->
+                  <div style="text-align: center; color: #34374C font-size: 14px;" >我的小伙伴</div>
+                  <!-- <div style="flex: 1"><hr></div> -->
+              </div>
+              <br>
+              <li><a href="http://www.dotdot.net.cn/" target="_blank">点点妹妹</a></li>
+              <br>
               <!-- 小功能列表 -->
               <div class="row div_little_func">
                   <div class="col-xs-1">
